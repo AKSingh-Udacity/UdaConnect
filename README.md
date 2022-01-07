@@ -73,6 +73,54 @@ http://localhost:30001/api/ - Base path for API
 
 http://localhost:30000/ - Frontend ReactJS Application
 
+# Project Structure
+To start, fork or clone the starter code.
+
+The project is organized with the following structure:
+
+db - database scripts
+deployment - Kubernetes configurations
+modules - application logic
+scripts - miscellaneous scripts
+When you're working on your services, it will make the most sense to add them under the modules directory with a similar setup to that of the starter code.
+
+The project contains a README in the project root. This is a great resource for referencing any project instructions or details for the project.
+
+# How To Complete The Project
+
+## Instructions
+1. Review and Plan
+Review the starter project
+Determine which message passing strategies would integrate well when refactoring to a microservice architecture.
+2. Design and Document
+Using the design decisions from the previous step, create an architecture diagram of your microservice architecture showing the services and message passing techniques between them.
+Continue to use Kubernetes and maintain the core functionality of the starter project.
+Include at least three message passing strategies into your microservice architecture implementing Kafka, gRPC, and either enhancing or creating a RESTful API endpoint.
+3. Justify Your Decisions
+Write a 2-3 sentence rationale for each message passing strategy to justify your decision.
+4. Refactor into Microservices
+Refactor the starter code into a microservice architecture.
+While microservices can be technology-agnostic, we want to make sure that we use tools that your company is comfortable with. Therefore, this project should be done in Python.
+5. Create OpenAPI Documentation
+Provide OpenAPI documentation for API endpoints.
+6. Create a Postman Library
+Provide Postman library for REST endpoints that you created or modified.
+
+# Submission Requirements
+The completed project must include:
+
+1. Instructions and commands on how to run the project in the project README.
+2. Architecture diagram named docs/architecture_design.png
+3. Document on justifying your architecture’s design decisions named docs/architecture_decisions.txt
+4. OpenAPI documentation of your new REST API endpoint as docs/openapi.yaml
+5. gRPC documentation of your endpoint and how to make a sample request in docs/grpc.txt
+6. Screenshot of kubectl get pods as docs/pods_screenshot.png
+7. Screenshot of kubectl get services as docs/services_screenshot.png
+8. All project code
+9. Postman collection of REST API endpoints that you created or modified as docs/postman.json
+
+## Challenges
+
 ## Generating gRPC files
 `pip install grpcio-tools`
 
